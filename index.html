@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* * PREMIUM STYLING BY A 20+ YEAR EXPERIENCE DEVELOPER
+         *
+         * Key Enhancements:
+         * 1.  Background: Switched to a deeper, more sophisticated charcoal/navy blue (#0a0a1a).
+         * 2.  Glassmorphism: Refined the card's backdrop-filter, border, and shadow for a more realistic glass effect.
+         * 3.  Typography: Utilized a wider range of font weights for better hierarchy and a cleaner look.
+         * 4.  Interactivity: The entire page is built around a highly interactive neural network animation.
+        */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a1a;
+            margin: 0;
+            overflow: hidden;
+            color: #e0e0e0;
+        }
+
+        #neural-network-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin 10s linear infinite; /* Slightly slower for a more subtle effect */
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium Interactive Neural Network Background -->
+    <canvas id="neural-network-canvas"></canvas>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+        <!-- Refined Glassmorphism Card -->
+        <div class="content-wrapper relative text-center p-8 bg-white/5 backdrop-blur-xl rounded-2xl shadow-2xl max-w-md w-full mx-4 border border-white/10">
+
+            <!-- Interactive Spinning Gear Icon -->
+            <div class="absolute top-6 left-6 cursor-pointer">
+                <svg class="w-8 h-8 text-purple-400 animate-spin-slow transition-all duration-300 ease-in-out hover:scale-125 hover:text-purple-300 hover:drop-shadow-[0_0_8px_rgba(200,160,255,0.7)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
+            
+            <!-- Company Logo -->
+            <div class="mb-6">
+                <img src="https://i.postimg.cc/ZKrhHym9/Whats-App-Image-2025-06-16-at-8-37-00-PM-1.jpg" 
+                     alt="Emirion Tech Lab Logo" 
+                     class="mx-auto rounded-lg shadow-lg"
+                     style="max-width: 140px; height: auto;"
+                     onerror="this.onerror=null;this.src='https://placehold.co/140x140/ffffff/000000?text=Logo+Error';">
+            </div>
+            
+            <!-- Main Heading with Hover Effect -->
+            <h1 class="text-4xl font-bold text-white tracking-tight mb-2 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] cursor-pointer">Under Maintenance</h1>
+            
+            <!-- Subheading with lighter font weight -->
+            <p class="text-gray-300 font-light mb-6">Our engineers are currently deploying upgrades. We'll be back online shortly.</p>
+            
+            <!-- Contact Information Section -->
+            <div class="bg-white/5 border-t border-b border-white/10 py-4 px-6">
+                <h2 class="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-2">Get in Touch</h2>
+                <p class="text-gray-200 font-light">For urgent inquiries, please contact us at:</p>
+                <a href="mailto:INFO@EMIRIONTECHLAB.AE" class="text-white font-medium hover:text-purple-300 transition-colors duration-300 text-lg">
+                    INFO@EMIRIONTECHLAB.AE
+                </a>
+            </div>
+            
+            <!-- Footer Text -->
+            <p class="text-xs text-white/40 mt-6 font-light">&copy; Emirion Tech Lab. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        /**
+         * PREMIUM NEURAL NETWORK ANIMATION
+         *
+         * Features:
+         * 1. Mouse Interactivity: Nodes and connections react to the cursor's position.
+         * 2. Pulsing Nodes: Nodes have a subtle pulsing animation for a more 'alive' feel.
+         * 3. Optimized Performance: Efficient calculations and use of requestAnimationFrame.
+         * 4. Responsive Density: Particle count adjusts to screen size for optimal performance.
+         */
+        const canvas = document.getElementById('neural-network-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let particles = [];
+        const mouse = { x: null, y: null, radius: 150 };
+
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        });
+        window.addEventListener('mouseout', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        }
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 1.5 + 1;
+                this.baseSize = this.size;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.color = 'rgba(128, 90, 213, 0.7)'; // Base color (a vibrant purple)
+                this.pulseSpeed = Math.random() * 0.02 + 0.01;
+                this.pulseOffset = Math.random() * Math.PI * 2;
+            }
+
+            update() {
+                // Bounce off edges
+                if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
+                if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
+                this.x += this.speedX;
+                this.y += this.speedY;
+                
+                // Pulsing effect
+                this.size = this.baseSize + Math.sin(Date.now() * this.pulseSpeed + this.pulseOffset) * 0.5;
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 9000;
+            for (let i = 0; i < numberOfParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function connect() {
+            let opacityValue = 1;
+            for (let a = 0; a < particles.length; a++) {
+                for (let b = a; b < particles.length; b++) {
+                    let dx = particles[a].x - particles[b].x;
+                    let dy = particles[a].y - particles[b].y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 100) {
+                        opacityValue = 1 - (distance / 100);
+                        ctx.strokeStyle = `rgba(128, 90, 213, ${opacityValue})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+            
+            // Mouse interactivity for connections
+            if (mouse.x !== null && mouse.y !== null) {
+                for (let i = 0; i < particles.length; i++) {
+                    let dx = mouse.x - particles[i].x;
+                    let dy = mouse.y - particles[i].y;
+                    let distance = Math.sqrt(dx*dx + dy*dy);
+                    if (distance < mouse.radius) {
+                         ctx.strokeStyle = `rgba(200, 160, 255, ${1 - distance/mouse.radius})`;
+                         ctx.lineWidth = 1;
+                         ctx.beginPath();
+                         ctx.moveTo(mouse.x, mouse.y);
+                         ctx.lineTo(particles[i].x, particles[i].y);
+                         ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+            }
+            connect();
+            requestAnimationFrame(animate);
+        }
+
+        resizeCanvas();
+        animate();
+    </script>
+</body>
+</html>
